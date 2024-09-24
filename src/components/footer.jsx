@@ -10,7 +10,7 @@ export default function Footer() {
                     </div>
                     <p>Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore magna aliqua.</p>
                 </div>
-                <div className='flex flex-col gap-5 w-[298px] '>
+                <div className='flex flex-col gap-5 w-[300px] '>
                     <h1 className='font-bold'>Quick Link’s</h1>
                     <div className='flex flex-col gap-2'>
                         <span>Home</span>

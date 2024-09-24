@@ -4,21 +4,11 @@
 
 body {
   margin: 0;
-  /* padding-inline: 80px; */
-  
-  color: #ededed20;
-  
-  
 }
 .background-image{
-  background-image: url(../src/assets/plantbg.png);
+  background-image: url(../src/assets/plantbg.jpg);
   background-size: cover;
   background-position: center; 
   margin: 0;
 
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
