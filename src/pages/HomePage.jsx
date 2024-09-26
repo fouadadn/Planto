@@ -131,10 +131,10 @@ export default function HomePage() {
 
                     <div className="pb-28">
                         <Slider {...settings} >
-                            <OurBest />
-                            <OurBest />
-                            <OurBest />
-                            <OurBest />
+                            <OurBest  img={plant1}/>
+                            <OurBest  img={plant2}/>
+                            <OurBest  img={plant3}/>
+                            <OurBest img={plant4} />
                         </Slider>
                     </div>
                 </div>

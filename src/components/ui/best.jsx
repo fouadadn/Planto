@@ -2,12 +2,12 @@ import { ChevronRight, ChevronLeft } from 'lucide-react';
 import plant1 from '../assets/Plant1.png'
 
 
-export default function OurBest() {
+export default function OurBest(props) {
     return (
         <div className='flex justify-center'>
             <div className='grid grid-cols-1 lg:grid-cols-2 w-fit items-center h-[700px] lg:h-[450px]  py-4 shadow-sm content-center shadow-white text-white bg-[#ffffff10] backdrop-blur-md rounded-[100px] '>
                 <div>
-                    <img src={plant1} className='w-[600px]  relative bottom-28' alt="" />
+                    <img src={props.img} className='w-[600px]  relative bottom-28' alt="" />
                 </div>
                 <div className='space-y-5 h-fit px-10 relative bottom-32 lg:bottom-0'>
                     <h1 className='text-white text-3xl'>We Have Small And Best O2 Plants <br /> Collection’s</h1>
