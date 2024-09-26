@@ -15,7 +15,59 @@ import pr2 from '../components/assets/pr2.png'
 import pr3 from '../components/assets/pr3.png'
 import OurBest from "../components/ui/best";
 import Footer from "../components/footer";
+
+// import styles from '../pages/style.module.css'
+
+
+import React from "react";
+import Slider from "react-slick";
+
 export default function HomePage() {
+
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "none" }}
+                onClick={onClick}
+            />
+        );
+    }
+
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "none" }}
+                onClick={onClick}
+            />
+        );
+    }
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        swipeToSlide: true,
+        pauseOnHover: true,
+        className: 'xi7aja',
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />,
+                }
+            }],
+        // fade: true,
+    };
+
     return (
         <>
             <div className="">
@@ -36,7 +88,7 @@ export default function HomePage() {
 
                     </div>
                 </div>
-                <div className="bg-[#1B2316] px-4 md:px-20">
+                <div className="bg-[#1B2316] px-3 md:px-20">
                     <div className='text-white text-5xl flex justify-center pt-24'>
                         <div className="w-fit relative">
                             <div className="w-12 h-12 border-t-0 border-r-0 border-[4px] border-[#ffffff60] rounded-tl-none rounded-br-none rounded-xl absolute -left-[9px] top-2" ></div>
@@ -56,7 +108,7 @@ export default function HomePage() {
                             <TopSelling img={plant6} />
                         </div>
                     </div>
-                    <div className='text-white text-5xl m-11 flex py-20 justify-center relative '>
+                    <div className='text-white text-5xl my-11 flex py-20 justify-center relative '>
                         <div className="w-fit relative">
                             <div className="w-12 h-12 border-t-0 border-r-0 border-[4px] border-[#ffffff60] rounded-tl-none rounded-br-none rounded-xl absolute -left-[9px] top-2" ></div>
                             <div className="w-12 h-12 border-b-0 border-l-0 border-[4px] border-[#ffffff60] rounded-tl-none rounded-br-none rounded-xl absolute -right-[9px]" ></div>
@@ -77,12 +129,17 @@ export default function HomePage() {
                         </div>
                     </div>
 
-                    <div className="py-20">
-                        <OurBest />
+                    <div className="pb-28">
+                        <Slider {...settings} >
+                            <OurBest />
+                            <OurBest />
+                            <OurBest />
+                            <OurBest />
+                        </Slider>
                     </div>
                 </div>
-                
-                <Footer/>
+
+                <Footer />
 
 
             </div>

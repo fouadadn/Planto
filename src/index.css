@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 body {
   margin: 0;
 }
@@ -10,5 +12,28 @@ body {
   background-size: cover;
   background-position: center; 
   margin: 0;
+  
 
+}
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 65px;
+  padding-bottom: 5px;
+  
+  
+}
+
+.slick-dots li.slick-active button:before {
+  color:White !important;
+}
+.slick-dots li button:before {
+  color:White !important;
+}
+
+.xi7aja > div {
+  padding-top: 100px;
+ 
 }

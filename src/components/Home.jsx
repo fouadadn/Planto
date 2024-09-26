@@ -1,10 +1,62 @@
 import { CirclePlay, Star } from 'lucide-react';
 import Plants from './ui/plants';
 import plant1 from './assets/Plant1.png'
+import plant2 from './assets/plant2.png'
+import plant3 from './assets/plant3.png'
+
 import profil1 from './assets/profil1.png'
+
+import React from "react";
+import Slider from "react-slick";
 
 
 export default function Home() {
+    function SampleNextArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "none" }}
+                onClick={onClick}
+            />
+        );
+    }
+
+    function SamplePrevArrow(props) {
+        const { className, style, onClick } = props;
+        return (
+            <div
+                className={className}
+                style={{ ...style, display: "none" }}
+                onClick={onClick}
+            />
+        );
+    }
+
+
+    var settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        swipeToSlide: true,
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    nextArrow: <SampleNextArrow />,
+                    prevArrow: <SamplePrevArrow />,
+                }
+            }],
+        // nextArrow: <SampleNextArrow />,
+        // prevArrow: <SamplePrevArrow />,
+        fade: true,
+    };
+
     return (
         <>
             <div className='text-white mt-20'>
@@ -23,12 +75,18 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div  className='relative top-20'>
-                            <Plants img={plant1}  />
+
+                        <div className='w-[360px] slider-container'>
+                            <Slider {...settings} >
+                                <Plants img={plant1} />
+                                <Plants img={plant2} />
+                                <Plants img={plant3} />
+                            </Slider>
+
                         </div>
                     </div>
                     <div>
-                        <div className='flex flex-col shadow-sm shadow-white border-white backdrop-blur-md w-fit rounded-3xl py-3 px-6 gap-4 bg-[#ffffff10]  h-fit relative top-20 2xl:-top-20'>
+                        <div className='flex flex-col shadow-sm shadow-white border-white backdrop-blur-md w-fit rounded-3xl py-3 px-6 gap-4 bg-[#ffffff10]  h-fit relative top-20 2xl:-top-32'>
                             <div className='flex items-center gap-3'>
                                 <img src={profil1} alt="" />
                                 <div>
@@ -52,3 +110,5 @@ export default function Home() {
         </>
     );
 }
+
+// export default CustomArrows;

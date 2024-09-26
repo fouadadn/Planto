@@ -22,7 +22,7 @@ export default function Footer() {
                 <div className='flex flex-col justify-between w-[298px] '>
                     <div className='space-y-4'>
                         <h1 className='font-bold'>For Every Update.</h1>
-                        <div className='border border-white p-[1px] rounded-md'>
+                        <div className='border flex flex-nowrap border-white p-[1px] rounded-md'>
                             <input className='bg-transparent px-2 outline-none' type="text" placeholder='Enter Email' />
                             <button className='text-black bg-white rounded-md px-3 py-1 font-bold'>Subscribe</button>
                         </div>
