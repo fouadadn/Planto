@@ -15,11 +15,6 @@ export default function OurBest(props) {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br /> elit, sed do eiusmod tempor incididunt ut labore et <br /> dolore magna aliqua. Ut enim ad minim veniam.</p>
                     <div className='flex justify-between'>
                         <button className='self-start text-gray-400 bodrer border border-white px-7 py-2 rounded-lg hover:text-black hover:bg-white duration-500'>Explore</button>
-                        {/* <div className='flex'>
-                            <ChevronLeft />
-                            <span><span className='text-'>01</span>/04</span>
-                            <ChevronRight />
-                        </div> */}
                     </div>
                 </div>
             </div>

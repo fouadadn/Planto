@@ -15,12 +15,9 @@ import pr2 from '../components/assets/pr2.png'
 import pr3 from '../components/assets/pr3.png'
 import OurBest from "../components/ui/best";
 import Footer from "../components/footer";
-
-// import styles from '../pages/style.module.css'
-
-
 import React from "react";
 import Slider from "react-slick";
+
 
 export default function HomePage() {
 
@@ -131,7 +128,7 @@ export default function HomePage() {
 
                     <div className="pb-28">
                         <Slider {...settings} >
-                            <OurBest  img={plant1}/>
+                            <OurBest  img={plant1 } />
                             <OurBest  img={plant2}/>
                             <OurBest  img={plant3}/>
                             <OurBest img={plant4} />
@@ -141,8 +138,7 @@ export default function HomePage() {
 
                 <Footer />
 
-
-            </div>
+           </div>
         </>
     );
 }

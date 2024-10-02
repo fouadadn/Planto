@@ -22,8 +22,7 @@ body {
   margin-top: 10px;
   padding-top: 65px;
   padding-bottom: 5px;
-  
-  
+
 }
 
 .slick-dots li.slick-active button:before {
@@ -33,7 +32,7 @@ body {
   color:White !important;
 }
 
-.xi7aja > div {
+.xi7aja > div{
   padding-top: 100px;
- 
 }
+
